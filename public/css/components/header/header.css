@@ -1,16 +1,21 @@
-.navbar {
+.navbar.header { 
     --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(75, 161, 245)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
 }
-.navbar-toggler {
+.navbar.header .navbar-toggler {
     border: none;
     transition: 150ms ease-in;
 }
-.navbar-toggler:focus {
+.navbar.header .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: none;
 }
-.navbar-profile img {
+.navbar.header .navbar-profile img {
     width: 48px;
     height: 48px;
     border-radius: 100%;

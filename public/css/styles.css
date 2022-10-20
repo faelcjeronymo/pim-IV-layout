@@ -20,3 +20,12 @@
     --bs-secondary-dark-rgb: 6, 198, 140;
     --bs-secondary-light-rgb: 196, 253, 236;
 }
+
+html, body {
+    height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    width: 100%;
+}

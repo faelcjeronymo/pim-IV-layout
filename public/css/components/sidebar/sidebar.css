@@ -1,0 +1,9 @@
+.navbar.sidebar {
+    top: 0;
+    left: 0;
+    min-width: 264px;
+    width: 264px;
+    padding: 1.5rem;
+    z-index: 9999;
+    height: 100vh;
+}
