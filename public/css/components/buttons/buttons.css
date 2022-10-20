@@ -1,0 +1,4 @@
+.btn {
+    --bs-btn-font-family: var(--bs-body-font-family);
+    --bs-btn-font-size: var(--bs-body-font-size);
+}

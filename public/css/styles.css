@@ -3,8 +3,10 @@
 :root {
     --bs-body-font-family: 'Inter', sans-serif;
     --bs-body-font-weight: 500;
+    --bs-body-font-size: .875rem;
     --bs-body-color: #3f4448;
-    --bs-body-bg: #f9fbfd;
+    --bs-body-bg: rgba(var(--bs-primary-dark-rgb), .0675);
+    --bs-border-color: rgba(var(--bs-primary-dark-rgb), .15)!important;
     /* Primary Color */
     --bs-primary: #4ba1f5;
     --bs-primary-dark: #003464;
@@ -19,6 +21,8 @@
     --bs-secondary-rgb: 115, 250, 209;
     --bs-secondary-dark-rgb: 6, 198, 140;
     --bs-secondary-light-rgb: 196, 253, 236;
+
+    --bs-white: #fcfcfc;
 }
 
 html, body {
@@ -49,7 +53,7 @@ html, body {
 .main-content .card {
     word-wrap: break-word;
     background-clip: border-box;
-    background-color: #fff;
+    background-color: var(--bs-white);
     border: none;
     border-radius: 0;
     display: flex;

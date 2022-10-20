@@ -7,4 +7,22 @@
     z-index: 9999;
     height: 100vh;
     background-color: var(--bs-white);
+    justify-content: start;
+    align-items: inherit;
+}
+
+.navbar.sidebar * {
+    border-color: rgba(var(--bs-primary-dark-rgb), .15)!important;
+}
+
+.navbar.sidebar ul.list-unstyled li button {
+    color: var(--bs-primary);
+    font-weight: 600;
+    --bs-btn-padding-x: 0;
+}
+
+.navbar.sidebar ul.list-unstyled li div ul li {
+    margin-left: 1.25rem;
+    font-size: var(--bs-body-font-size);
+    padding: .25rem 0;
 }
