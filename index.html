@@ -15,35 +15,87 @@
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <!-- Sidebar -->
-        <nav class="navbar sidebar bg-primary shadow">
-
-        </nav>
-        <!-- Header -->
-        <nav class="navbar header navbar-expand-lg shadow-sm bg-white">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-mobile" aria-controls="sidebar-mobile" aria-expanded="false" aria-label="Toggle Mobile Sidebar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-profile ms-auto">
-                    <span>Meu Perfil</span>
-                    <img src="./public/img/imagem-rafael.png" alt="Imagem do usuário">
-                    <i class="fa fa-chevron-down"></i>
+    <div class="application h-100">
+        <aside class="aside-sidebar">
+            <!-- Sidebar -->
+            <nav class="navbar sidebar border-end d-none d-xxl-flex"></nav>
+        </aside>
+        <div class="page-wrapper">
+            <!-- Header -->
+            <nav class="navbar header navbar-expand-xxl">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-mobile" aria-controls="sidebar-mobile" aria-expanded="false" aria-label="Toggle Mobile Sidebar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-profile ms-auto">
+                        <span class="text-primary">Meu Perfil</span>
+                        <img src="./public/img/imagem-rafael.png" alt="Imagem do usuário">
+                        <i class="fa fa-chevron-down text-primary"></i>
+                    </div>
+                </div>
+            </nav>
+            <!-- Sidebar mobile -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar-mobile" aria-labelledby="sidebar-label">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title m-0 fw-semibold">
+                        <span class="text-primary">Apoli</span><span class="text-secondary">Sys</span>
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
                 </div>
             </div>
-        </nav>
-        <!-- Sidebar mobile -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar-mobile" aria-labelledby="sidebar-label">
-            <div class="offcanvas-header">
-                <h1 class="offcanvas-title m-0 fw-semibold">
-                    <span class="text-primary">Apoli</span><span class="text-secondary">Sys</span>
-                </h1>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
-            </div>
+            <!-- Main Content -->
+            <main class="main-content my-xxl-2">
+                <div class="container-fluid">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="card-header-title text-primary">Conteúdo Principal</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                                <div class="col-4">
+                                    <h3 class="text-primary">Título</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ea cupiditate exercitationem quo molestias, eaque sunt laborum iusto aperiam laudantium ex optio adipisci aliquid libero atque doloremque dicta aut pariatur facilis est. Repellat fugiat ducimus fuga placeat est harum neque et deserunt, minima ipsum nobis qui excepturi consequuntur inventore, ex vel atque non doloribus. Consequuntur error nobis non. Error id mollitia sed dolorem excepturi labore esse? Praesentium dolore adipisci error architecto odit ullam fugit corrupti.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
         </div>
     </div>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

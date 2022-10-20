@@ -6,4 +6,5 @@
     padding: 1.5rem;
     z-index: 9999;
     height: 100vh;
+    background-color: var(--bs-white);
 }

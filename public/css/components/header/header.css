@@ -3,8 +3,9 @@
     z-index: 1000;
     left: 0;
     right: 0;
-    height: 100%;
     width: 100%;
+    background-color: var(--bs-white);
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
 }
 .navbar.header .navbar-toggler {
     border: none;
