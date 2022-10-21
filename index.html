@@ -16,8 +16,9 @@
 
 <body>
     <div class="application h-100">
+        <!-- Sidebar -->
         <aside class="aside-sidebar">
-            <!-- Sidebar -->
+            <!-- Sidebar Nav -->
             <nav class="navbar sidebar border-end d-none d-xxl-flex flex-column py-3">
                 <a href="/" class="d-flex justify-content-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
                     <h5 class="h3 fw-semibold m-0">
@@ -111,7 +112,11 @@
                 <div class="container-fluid">
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-header-title text-primary">Conteúdo Principal</h5>
+                            <form action="post">
+                                <div class="input-group">
+                                    <input type="text" class="form-control search-input">
+                                </div>
+                            </form>
                         </div>
                         <div class="card-body">
                             <div class="row">
