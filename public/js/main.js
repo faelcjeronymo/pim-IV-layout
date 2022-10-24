@@ -12,9 +12,15 @@ export default function createHtmlElement (elementName, elementAttributes = {}, 
     /* Inserindo Atributos no elemento criado */
     if (Object.keys(elementAttributes) !== 0) {
         for (const attribute in elementAttributes) {
-            const elementAttribute = document.createAttribute(attribute);
-            elementAttribute.value = elementAttributes[attribute];
-            element.setAttributeNode(elementAttribute);
+
+            if (elementAttributes[attribute] === true) {
+                let elementAttribute = document.createAttribute(attribute);
+                element.setAttributeNode(elementAttribute);
+            } else {
+                const elementAttribute = document.createAttribute(attribute);
+                elementAttribute.value = elementAttributes[attribute];
+                element.setAttributeNode(elementAttribute);
+            }
         }
     }
 

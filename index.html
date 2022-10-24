@@ -4,15 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Main Imports -->
-    <link rel="stylesheet" href="/public/css/main.css">
-    <!-- Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/5a992afea4.js" crossorigin="anonymous"></script>
+    <title>Index</title>
+    <script src="/public/js/vendor.js" type="module" defer></script>
 </head>
 <body>
-    <script src="/public/js/vendor.js" type="module"></script>
+    <div class="application">
+        <page-sidebar></page-sidebar>
+        <div class="page-wrapper">
+            <page-header></page-header>
+            <main class="main-content">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="container my-3">
+                            <div class="row justify-content-center justify-content-lg-start gx-5" id="linha">
+                                <h5 class="col-auto text-primary card-title text-center text-lg-start">Segurados</h5>
+                                <div class="w-100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script>
+        for (let i = 0; i < 15; i++) {
+            let linha = document.getElementById("linha");
+            let template = document.createElement('div');
+            template.classList.add("col-auto", "mb-3");
+            let elemento = `
+            <div class="card segurado">
+                <div>
+                    <img src="/public/img/imagem-rafael.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            `
+            template.innerHTML = elemento;
+
+            linha.append(template);
+        }
+    </script>
 </body>
 </html>

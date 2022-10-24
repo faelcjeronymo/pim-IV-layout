@@ -1,4 +1,4 @@
-import createHtmlElement from "../main.js";
+import createHtmlElement from "./main.js";
 
 //Importando CSS's
 let cssUrls = {
@@ -17,15 +17,16 @@ let cssUrls = {
 // Importando JS's
 let jsUrls = {
     "base" : {
-        "bootstrap" : "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+        "bootstrap" : "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        "font-awesome" : "https://kit.fontawesome.com/5a992afea4.js",
     },
     "components" : {
         "header" : "/public/js/components/header/header.js",
         "sidebar" : "/public/js/components/sidebar/sidebar.js",
-        "main-content" : "/public/js/components/main-content/main-content.js",
     }
 }
 
+// Inserindo CSS Base
 for (const prop in cssUrls.base) {
     let linkAttributes = {
         "rel": "stylesheet",
@@ -35,11 +36,30 @@ for (const prop in cssUrls.base) {
     createHtmlElement("link", linkAttributes, 'head');
 }
 
-for (const prop in cssUrls.base) {
+//Inserindo CSS de componentes
+for (const prop in cssUrls.components) {
     let linkAttributes = {
         "rel": "stylesheet",
-        "href": cssUrls.base[prop]
+        "href": cssUrls.components[prop]
     };
 
     createHtmlElement("link", linkAttributes, 'head');
+}
+
+//Inserindo JS Base
+for (const prop in jsUrls.base) {
+    let scriptAttributes = {
+        "src": jsUrls.base[prop],
+    };
+
+    createHtmlElement("script", scriptAttributes, 'body');
+}
+
+//Inserindo JS de componentes
+for (const prop in jsUrls.components) {
+    let scriptAttributes = {
+        "src": jsUrls.components[prop],
+    };
+
+    createHtmlElement("script", scriptAttributes, 'body');
 }

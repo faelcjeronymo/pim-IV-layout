@@ -6,13 +6,13 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <!-- Header -->
-        <nav class="navbar header navbar-expand-xxl">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar-mobile" aria-controls="sidebar-mobile" aria-expanded="false" aria-label="Toggle Mobile Sidebar">
-                    <span class="navbar-toggler-icon"></span>
+        <nav class="navbar header px-4">
+            <div class="container justify-content-between">
+                <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar">
+                    <i class="fa fa-bars"></i>
                 </button>
-                <div class="navbar-profile ms-auto">
-                    <span class="text-primary">Meu Perfil</span>
+                <div class="navbar-profile">
+                    <span class="text-primary fw-semibold">Meu Perfil</span>
                     <img src="./public/img/imagem-rafael.png" alt="Imagem do usuário">
                     <i class="fa fa-chevron-down text-primary"></i>
                 </div>

@@ -6,63 +6,105 @@ class Sidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <!-- Sidebar -->
-        <aside class="aside-sidebar">
+        <aside class="aside-sidebar collapse collapse-horizontal" id="sidebar">
             <!-- Sidebar Nav -->
-            <nav class="navbar sidebar border-end d-none d-xxl-flex flex-column py-3">
-                <a href="/" class="d-flex justify-content-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
-                    <h5 class="h3 fw-semibold m-0">
-                        <span class="text-primary">Apoli</span><span class="text-secondary">Sys</span>
-                    </h5>
-                </a>
-                <ul class="list-unstyled ps-0">
-                    <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-primary" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
-                            Segurado
+            <nav class="navbar sidebar shadow">
+                <div class="sidebar-header">
+                    <a href="/" class="text-decoration-none py-3 sidebar-logo">
+                        <span class="text-primary h3 fw-semibold m-0">Apoli</span><span class="text-secondary h3 fw-semibold m-0">Sys</span>
+                    </a>
+                    <button class="fa btn-close" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Fechar barra lateral"></button>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="sidebar-nav-item">
+                        <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#segurados-submenu" aria-expanded="false">
+                            <i class="fa fa-users sidebar-nav-item-icon"></i>
+                            <span>Segurados</span>
+                            <i class="fa sidebar-nav-item-arrow"></i>
                         </button>
-                        <div class="collapse" id="home-collapse" style="">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Overview</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Updates</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Reports</a></li>
+                        <div class="collapse sidebar-nav-item-collapse" id="segurados-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-list me-1"></i>
+                                        <span>Cadastrados</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-plus me-1"></i>
+                                        <span>Cadastrar</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-primary" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-                            Veículos
+                    <li class="sidebar-nav-item">
+                        <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#veiculos-submenu" aria-expanded="false">
+                            <i class="fa fa-car-side sidebar-nav-item-icon"></i>
+                            <span>Veículos</span>
+                            <i class="fa sidebar-nav-item-arrow"></i>
                         </button>
-                        <div class="collapse" id="dashboard-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Overview</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Weekly</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Monthly</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Annually</a></li>
+                        <div class="collapse sidebar-nav-item-collapse" id="veiculos-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-list me-1"></i>
+                                        <span>Cadastrados</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-plus me-1"></i>
+                                        <span>Cadastrar</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-primary" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-                            Cotações
+                    <li class="sidebar-nav-item">
+                        <button class="btn btn-toggle" data-bs-toggle="collapse" data-bs-target="#cotacoes-submenu" aria-expanded="false">
+                            <i class="fa fa-list-check sidebar-nav-item-icon"></i>
+                            <span>Cotações</span>
+                            <i class="fa sidebar-nav-item-arrow"></i>
                         </button>
-                        <div class="collapse" id="orders-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">New</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Processed</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Shipped</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Returned</a></li>
+                        <div class="collapse sidebar-nav-item-collapse" id="cotacoes-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-list me-1"></i>
+                                        <span>Geradas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-plus me-1"></i>
+                                        <span>Gerar</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
-                    <li class="mb-1">
-                        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed text-primary"data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-                            Apólices
+                    <li class="sidebar-nav-item">
+                        <button class="btn btn-toggle"data-bs-toggle="collapse" data-bs-target="#apolices-submenu" aria-expanded="false">
+                            <i class="fa fa-file-lines sidebar-nav-item-icon"></i>
+                            <span>Apólices</span>
+                            <i class="fa sidebar-nav-item-arrow"></i>
                         </button>
-                        <div class="collapse" id="account-collapse">
-                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">New...</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Profile</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Settings</a></li>
-                                <li><a href="#" class="link-dark d-inline-flex text-decoration-none rounded text-primary">Sign out</a></li>
+                        <div class="collapse sidebar-nav-item-collapse" id="apolices-submenu">
+                            <ul>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-list me-1"></i>
+                                        <span>Emitidas</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-toggle">
+                                        <i class="fa fa-plus me-1"></i>
+                                        <span>Emitir</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </li>
@@ -95,5 +137,5 @@ class SidebarMobile extends HTMLElement {
     }
 }
 
-customElements.define("sidebar", Sidebar);
-customElements.define("sidebar-mobile", SidebarMobile);
+customElements.define("page-sidebar", Sidebar);
+customElements.define("page-sidebar-mobile", SidebarMobile);
