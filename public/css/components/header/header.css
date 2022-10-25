@@ -5,8 +5,9 @@
     right: 0;
     width: 100%;
     background-color: var(--bs-white);
-    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+    border-bottom: none;
     height: 68px;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
 }
 
 .navbar.header .navbar-toggler {

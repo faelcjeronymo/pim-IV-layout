@@ -12,6 +12,7 @@ let cssUrls = {
         "sidebar" : "/public/css/components/sidebar/sidebar.css",
         "buttons" : "/public/css/components/buttons/buttons.css",
         "inputs" : "/public/css/components/inputs/inputs.css",
+        "tables" : "/public/css/components/tables/tables.css",
     }
 };
 
