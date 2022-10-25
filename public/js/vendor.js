@@ -8,6 +8,7 @@ let cssUrls = {
     },
     "components" : {
         "header" : "/public/css/components/header/header.css",
+        "dropdowns" : "/public/css/components/dropdowns/dropdowns.css",
         "sidebar" : "/public/css/components/sidebar/sidebar.css",
         "buttons" : "/public/css/components/buttons/buttons.css",
         "inputs" : "/public/css/components/inputs/inputs.css",

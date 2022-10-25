@@ -15,10 +15,12 @@ class Header extends HTMLElement {
                     <span class="text-primary fw-semibold">Meu Perfil</span>
                     <img src="./public/img/imagem-rafael.png" alt="Imagem do usuário">
                     <i class="fa fa-chevron-down text-primary"></i>
-                    <button class="btn btn-transparent stretched-link" data-bs-toggle="dropdown" aria-expanded="false"></button>
-                    <ul class="dropdown-menu">
+                    <a class="stretched-link show" data-bs-toggle="dropdown" aria-expanded="false" role="button"></a>
+                    <ul class="dropdown-menu dropdown-menu-end show">
                         <li><a class="dropdown-item" href="#">Action</a></li>
+                        <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <hr class="dropdown-divider">
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
