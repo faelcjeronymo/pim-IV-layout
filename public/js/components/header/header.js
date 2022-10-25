@@ -12,16 +12,17 @@ class Header extends HTMLElement {
                     <i class="fa fa-bars"></i>
                 </button>
                 <div class="navbar-profile dropdown">
-                    <span class="text-primary fw-semibold">Meu Perfil</span>
+                    <a class="navbar-profile-toggler" data-bs-toggle="dropdown" aria-expanded="false" role="button"></a>
+                    <span class="navbar-profile-text">Meu Perfil</span>
                     <img src="./public/img/imagem-rafael.png" alt="Imagem do usuário">
-                    <i class="fa fa-chevron-down text-primary"></i>
-                    <a class="stretched-link show" data-bs-toggle="dropdown" aria-expanded="false" role="button"></a>
-                    <ul class="dropdown-menu dropdown-menu-end show">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <hr class="dropdown-divider">
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <i class="fa fa-chevron-down navbar-profile-arrow"></i>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a class="dropdown-item" href="#sair">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                <span>Sair</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

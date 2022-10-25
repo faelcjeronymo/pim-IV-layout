@@ -55,6 +55,7 @@
     background-color: transparent;
     border-radius: .4rem;
     border: 0;
+    transition: background-color 250ms ease;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {

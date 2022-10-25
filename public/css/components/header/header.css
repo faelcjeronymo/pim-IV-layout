@@ -8,24 +8,53 @@
     border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
     height: 68px;
 }
+
 .navbar.header .navbar-toggler {
     border: none;
     transition: 150ms ease-in;
 }
+
 .navbar.header .navbar-toggler i {
     color: var(--bs-primary);
     font-size: 1.5rem;
     transition: color 350ms;
 }
+
 .navbar.header .navbar-toggler:hover i {
     transition: color 350ms;
     color: var(--bs-primary-dark);
 }
+
 .navbar.header .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
     box-shadow: none;
 }
+
+.navbar.header .navbar-profile {
+    position: relative;
+}
+
+.navbar.header .navbar-profile .navbar-profile-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
+
+.navbar-profile .navbar-profile-toggler:hover ~ .navbar-profile-text, .navbar-profile .navbar-profile-toggler:hover ~ .navbar-profile-arrow {
+    color: var(--bs-primary-dark);
+    transition: color 250ms ease-in;
+}
+
+.navbar.header .navbar-profile > * {
+    color: var(--bs-primary);
+    transition: color 250ms ease-in;
+}
+
 .navbar.header .navbar-profile img {
     width: 48px;
     height: 48px;

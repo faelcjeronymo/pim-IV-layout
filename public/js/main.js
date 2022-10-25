@@ -11,7 +11,7 @@ export default function createHtmlElement (elementName, elementAttributes = {}, 
 
     /* Inserindo Atributos no elemento criado */
     if (Object.keys(elementAttributes) !== 0) {
-        for (const attribute in elementAttributes) {
+        for (const attribute in elementAttributes) {    
 
             if (elementAttributes[attribute] === true) {
                 let elementAttribute = document.createAttribute(attribute);
