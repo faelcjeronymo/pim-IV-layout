@@ -157,7 +157,7 @@
     padding: .25rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .navbar.sidebar {
         width: 272px;
         min-width: 272px;
@@ -168,9 +168,7 @@
     .aside-sidebar.collapse.show::after {
         content: unset;
     }
-}
 
-@media (min-width: 1200px) {
     .navbar.sidebar .sidebar-nav .sidebar-nav-item .btn-toggle {
         font-size: .85rem;
     }

@@ -49,7 +49,7 @@ html, body {
 .main-content > .card {
     word-wrap: break-word;
     background-clip: border-box;
-    background-color: var(--bs-light);
+    background-color: var(--bs-white);
     border: none;
     border-radius: 0;
     display: flex;
@@ -63,10 +63,6 @@ html, body {
 }
 
 .main-content > .card .card-header {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    height: 60px;
     background-color: transparent;
     border-bottom: none;
     margin-bottom: 0;
@@ -79,7 +75,6 @@ html, body {
 }
 
 .main-content > .card > .card-body {
-    padding: 1.5rem;
     padding-top: 0;
     width: 100%;
     overflow-x: hidden;
@@ -105,10 +100,6 @@ html, body {
 .main-content > .card > .card-body::-webkit-scrollbar-thumb:hover {
     transition: background-image 250ms ease;
     background-image: linear-gradient(to left bottom, #003464, #003160, #002e5c, #002c59, #002955);
-}
-
-.main-content > .card > .card-body > .container-fluid {
-    padding: 0;
 }
 
 /* Apagar depois */

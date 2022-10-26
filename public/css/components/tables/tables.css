@@ -12,8 +12,21 @@
     border-color: var(--bs-table-border-color);
     color: var(--bs-table-color);
     margin-bottom: 1.875rem;
-    vertical-align: top;
+    vertical-align: middle;
     width: 100%;
+    white-space: nowrap;
+    border-radius: 1.5rem;
+}
+
+.table>:not(caption)>*>* {
+    background-color: var(--bs-table-bg);
+    border-bottom-width: 1px;
+    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+    padding: 1rem 1.25rem;
+}
+
+.thead-light {
+    background-color: #f0f3f8;
 }
 
 tbody, td, tfoot, th, thead, tr {
@@ -23,4 +36,39 @@ tbody, td, tfoot, th, thead, tr {
 
 th a {
     text-decoration: none;
+    color: rgba(var(--bs-primary-dark-rgb));
+}
+
+
+.avatar {
+    --bs-avatar-bg: var(--bs-gray-300);
+    --bs-avatar-color: var(--bs-gray-500);
+    --bs-avatar-border-radius: 0.625rem;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    height: 3rem;
+    position: relative;
+    width: 3rem;
+}
+
+.avatar, .avatar-img {
+    border-radius: var(--bs-avatar-border-radius);
+    display: inline-block;
+}
+
+.avatar-xs {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.avatar-circle .avatar-img {
+    border-radius: 50%;
+}
+
+.avatar-img {
+    height: 100%;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    pointer-events: none;
 }
