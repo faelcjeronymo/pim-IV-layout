@@ -169,3 +169,16 @@
         content: unset;
     }
 }
+
+@media (min-width: 1200px) {
+    .navbar.sidebar .sidebar-nav .sidebar-nav-item .btn-toggle {
+        font-size: .85rem;
+    }
+
+    .navbar.sidebar .sidebar-nav .sidebar-nav-item .sidebar-nav-item-collapse ul li a.btn-toggle {
+        display: inline-flex;
+        text-decoration: none;
+        color: var(--bs-primary);
+        font-size: .785rem;
+    }
+}

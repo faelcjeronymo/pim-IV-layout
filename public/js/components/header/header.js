@@ -7,7 +7,7 @@ class Header extends HTMLElement {
         this.innerHTML = `
         <!-- Header -->
         <nav class="navbar header px-4">
-            <div class="container justify-content-between">
+            <div class="container-fluid justify-content-between">
                 <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar">
                     <i class="fa fa-bars"></i>
                 </button>
