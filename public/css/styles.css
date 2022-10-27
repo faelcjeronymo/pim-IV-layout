@@ -79,6 +79,7 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
+    padding-right: .5rem!important;
 }
 
 .main-content > .card > .card-body::-webkit-scrollbar {
