@@ -82,6 +82,10 @@ html, body {
     padding-right: .5rem!important;
 }
 
+.main-content > .card > .card-body > .container-fluid {
+    margin-bottom: 5rem;
+}
+
 .main-content > .card > .card-body::-webkit-scrollbar {
     width: 16px;
 }

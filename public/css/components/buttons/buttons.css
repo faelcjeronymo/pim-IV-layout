@@ -20,3 +20,28 @@
     --bs-btn-disabled-bg: rgba(var(--bs-primary-rgb), .9);
     --bs-btn-disabled-border-color: rgba(var(--bs-primary-rgb), .0);
 }
+
+.btn-table {
+    padding: .375rem .6rem;
+}
+
+.btn-table i {
+    min-width: 0.875rem;
+}
+
+.btn-table.remove i {
+    color: var(--bs-danger);
+}
+
+.btn-table.remove:hover {
+    background-color: var(--bs-danger);
+}
+
+.btn-table.remove:hover i {
+    color: var(--bs-white);
+}
+
+.btn-table:hover {
+    background-color: var(--bs-primary-dark);
+    color: var(--bs-white);
+}

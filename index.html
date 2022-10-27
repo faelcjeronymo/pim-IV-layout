@@ -20,9 +20,9 @@
                                 <div class="col-12 col-md-auto mb-3 mb-md-0">
                                     <h5 class="text-primary card-title m-0">Segurados</h5>
                                 </div>
-                                <div class="col-12 col-md-6 col-lg-4">
+                                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
                                     <div class="input-group">
-                                        <input type="text" class="form-control search-input">
+                                        <input type="text" class="form-control search-input" placeholder="Digite o nome do segurado...">
                                         <i class="fa fa-magnifying-glass search-icon"></i>
                                         <button class="btn btn-primary input-group-text">Pesquisar</button>
                                     </div>
@@ -35,39 +35,19 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="table-responsive">
-                                <table class="table align-middle table-edge table-hover table-nowrap mb-0">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>
-                                                <a href="javascript: void(0);" class="text-muted list-sort" data-sort="name">
-                                                    Full name
-                                                </a>
-                                            </th>
-                                            <th>
-                                                <a href="javascript: void(0);" class="text-muted list-sort" data-sort="email">
-                                                    Email
-                                                </a>
-                                            </th>
-                                            <th>
-                                                <a href="javascript: void(0);" class="text-muted list-sort" data-sort="id">
-                                                    User ID
-                                                </a>
-                                            </th>
-                                            <th>
-                                                <a href="javascript: void(0);" class="text-muted list-sort" data-sort="date">
-                                                    Signed up
-                                                </a>
-                                            </th>
-                                            <th class="w-150px min-w-150px">
-                                                <a href="javascript: void(0);" class="text-muted list-sort" data-sort="status">
-                                                    Status
-                                                </a>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="list"></tbody>
-                                </table>
-                            </div>
+                                        <table class="table table-hover table-nowrap mb-0">
+                                            <thead class="thead-light">
+                                                <tr>
+                                                    <th>Nome</th>
+                                                    <th>CPF</th>
+                                                    <th>Número p/ Contato</th>
+                                                    <th>Data de Cadastro</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody id="list"></tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -106,12 +86,24 @@
                 <div class="avatar avatar-circle avatar-xs me-2">
                     <img src="https://d33wubrfki0l68.cloudfront.net/9e7ac59225f733be5944b3e91271b33adb30cae7/56230/assets/images/profiles/profile-14.jpeg" alt="..." class="avatar-img" width="30" height="30">
                 </div>
-                <span class="name fw-bold">Hakeem Chan</span>
+                <span class="name fw-bold">Victor Fernando</span>
             </td>
-            <td class="email">lobortis.augue@natoquepenatibuset.ca</td>
-            <td class="id">#9265</td>
-            <td class="date" data-signed="1648252800">03.26.2022</td>
-            <td class="status"><span class="legend-circle bg-success"></span>Successful</td>
+            <td class="email">email@unip.br</td>
+            <td class="id">(16) 99310-0998</td>
+            <td class="date">27/10/2022</td>
+            <td class="status w-auto">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-table me-2">
+                        <i class="fa fa-pen"></i>
+                    </button>
+                    <button class="btn btn-table remove me-2">
+                        <i class="fa fa-trash"></i>
+                    </button>
+                    <button class="btn btn-table">
+                        <i class="fa fa-info-circle"></i>
+                    </button>
+                </div>
+            </td>
             `
             template.innerHTML = elemento;
 
