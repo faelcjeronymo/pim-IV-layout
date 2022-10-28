@@ -18,14 +18,7 @@
                         <div class="container-fluid">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-12 col-md-auto mb-3 mb-md-0">
-                                    <h5 class="text-primary card-title m-0">Segurados</h5>
-                                </div>
-                                <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control search-input" placeholder="Digite o nome do segurado...">
-                                        <i class="fa fa-magnifying-glass search-icon"></i>
-                                        <button class="btn btn-primary input-group-text">Pesquisar</button>
-                                    </div>
+                                    <h5 class="text-primary card-title m-0">Veículos</h5>
                                 </div>
                             </div>
                         </div>
@@ -40,26 +33,32 @@
                                                 <tr>
                                                     <th>
                                                         <div class="d-flex align-items-center">
-                                                            <i class="fa fa-user"></i>
-                                                            Nome
+                                                            <i class="fa fa-car-side"></i>
+                                                            Modelo
                                                         </div>
                                                     </th>
                                                     <th>
                                                         <div class="d-flex align-items-center">
-                                                            <i class="fa fa-id-card"></i>
-                                                            CPF
+                                                            <i class="fa fa-hashtag"></i>
+                                                            Placa
                                                         </div>
                                                     </th>
                                                     <th>
                                                         <div class="d-flex align-items-center">
-                                                            <i class="fa fa-square-phone"></i>
-                                                            Número p/ Contato
+                                                            <i class="fa fa-wallet"></i>
+                                                            RENAVAM
                                                         </div>
                                                     </th>
                                                     <th>
                                                         <div class="d-flex align-items-center">
-                                                            <i class="fa fa-calendar"></i>
-                                                            Data de Cadastro
+                                                            <i class="fa fa-road"></i>
+                                                            Km rodados
+                                                        </div>
+                                                    </th>
+                                                    <th class="text-center">
+                                                        <div class="d-flex align-items-center justify-content-center">
+                                                            <i class="fa fa-list-check"></i>
+                                                            Cotações Realizadas
                                                         </div>
                                                     </th>
                                                     <th></th>
@@ -77,26 +76,6 @@
         </div>
     </div>
     <script>
-        // for (let i = 0; i < 15; i++) {
-        //     let linha = document.getElementById("linha");
-        //     let template = document.createElement('div');
-        //     template.classList.add("col-auto", "mb-4");
-        //     let elemento = `
-        //     <div class="card segurado">
-        //         <div>
-        //             <img src="/public/img/imagem-rafael.png" class="card-img-top" alt="...">
-        //         </div>
-        //         <div class="card-body">
-        //             <h5 class="card-title">Card title</h5>
-        //             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        //             <a href="#" class="btn btn-primary">Go somewhere</a>
-        //         </div>
-        //     </div>
-        //     `
-        //     template.innerHTML = elemento;
-
-        //     linha.append(template);
-        // }
          for (let i = 0; i < 15; i++) {
             let linha = document.getElementById("list");
             let template = document.createElement("tr");
@@ -104,13 +83,14 @@
             let elemento = `
             <td>
                 <div class="avatar avatar-circle avatar-xs me-2">
-                    <img src="https://d33wubrfki0l68.cloudfront.net/9e7ac59225f733be5944b3e91271b33adb30cae7/56230/assets/images/profiles/profile-14.jpeg" alt="..." class="avatar-img" width="30" height="30">
+                    <img src="/public/img/brands-logo/chevrolet-logo.png" alt="..." class="avatar-img" width="30" height="auto">
                 </div>
-                <span class="name fw-bold">Victor Fernando</span>
+                <span class="name fw-bold">Corsa Classic, 2006</span>
             </td>
-            <td class="email">277.468.486-11</td>
-            <td class="id">(16) 99310-0998</td>
-            <td class="date">27/10/2022</td>
+            <td class="email">HBR-9534</td>
+            <td class="id">49848951-8</td>
+            <td class="date">168.148 Km</td>
+            <td class="date text-center">3</td>
             <td class="status w-auto">
                 <div class="d-flex justify-content-end">
                     <button class="btn btn-table me-2">

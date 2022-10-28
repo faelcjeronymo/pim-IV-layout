@@ -22,6 +22,7 @@
     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
     padding: 1rem 1.25rem;
     transition: 100ms ease-in;
+    text-align: center;
 }
 
 .thead-light {
@@ -36,6 +37,17 @@ tbody, td, tfoot, th, thead, tr {
 th {
     text-decoration: none;
     color: var(--bs-white);
+}
+
+th div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th i {
+    margin-right: .25rem;
+    font-size: 1rem;
 }
 
 .avatar {
@@ -64,7 +76,6 @@ th {
 }
 
 .avatar-img {
-    height: 100%;
     max-width: 100%;
     -o-object-fit: cover;
     object-fit: cover;

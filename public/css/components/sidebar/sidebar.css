@@ -162,12 +162,6 @@
         width: 272px;
         min-width: 272px;
     }
-    .aside-sidebar {
-        position: inherit;
-    }
-    .aside-sidebar.collapse.show::after {
-        content: unset;
-    }
 
     .navbar.sidebar .sidebar-nav .sidebar-nav-item .btn-toggle {
         font-size: .85rem;
@@ -178,5 +172,15 @@
         text-decoration: none;
         color: var(--bs-primary);
         font-size: .785rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    .aside-sidebar {
+        position: inherit;
+    }
+    
+    .aside-sidebar.collapse.show::after {
+        content: unset;
     }
 }

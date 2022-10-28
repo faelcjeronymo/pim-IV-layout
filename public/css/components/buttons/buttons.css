@@ -27,6 +27,7 @@
 
 .btn-table i {
     min-width: 0.875rem;
+    color: var(--bs-primary-dark);
 }
 
 .btn-table.remove i {
@@ -43,5 +44,9 @@
 
 .btn-table:hover {
     background-color: var(--bs-primary-dark);
+    color: var(--bs-white);
+}
+
+.btn-table:hover i {
     color: var(--bs-white);
 }
