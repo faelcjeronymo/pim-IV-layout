@@ -1,10 +1,10 @@
 .table {
-    --bs-table-color: var(--bs-body-color);
+    --bs-table-color: var(--bs-primary-dark);
     --bs-table-bg: transparent;
     --bs-table-accent-bg: transparent;
     --bs-table-striped-color: var(--bs-body-color);
     --bs-table-active-color: var(--bs-body-color);
-    --bs-table-hover-color: var(--bs-body-color);
+    --bs-table-hover-color: var(--bs-table-color);
     --bs-table-hover-bg: rgba(var(--bs-primary-dark-rgb), .1);
     --bs-table-border-color: #f4f4f4;
     border-color: var(--bs-table-border-color);
@@ -32,6 +32,10 @@
 tbody, td, tfoot, th, thead, tr {
     border: 0 solid;
     border-color: inherit;
+}
+
+.table tbody tr {
+    position: relative;
 }
 
 th {
@@ -80,4 +84,46 @@ th i {
     -o-object-fit: cover;
     object-fit: cover;
     pointer-events: none;
+}
+
+.table-cell-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-cell-icon i.fa {
+    margin-right: .25rem;
+    font-size: 1.25rem!important;
+}
+
+.table-cell-buttons {
+    z-index: 1001;
+    pointer-events: all;
+}
+
+.table-cell-buttons button {
+    margin-right: .5rem;
+    z-index: 2;
+}
+
+.table-cell-buttons button:disabled {
+    border: none;
+}
+
+.table-line-disabled > td:not(td.table-cell-buttons) {
+    background-color: rgba(var(--bs-primary-dark-rgb), .1);
+    opacity: .5;
+    pointer-events: none;
+    --bs-table-hover-bg: none;
+}
+
+.table-line-disabled > td.table-cell-buttons {
+    pointer-events: none;
+    background-color: rgba(var(--bs-primary-dark-rgb), .060);
+    --bs-table-hover-bg: none;
+}
+
+.table-line-disabled > td.table-cell-buttons button:not(button:disabled) {
+    pointer-events: all;
 }

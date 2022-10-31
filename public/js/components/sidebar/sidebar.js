@@ -25,7 +25,7 @@ class Sidebar extends HTMLElement {
                         <div class="collapse sidebar-nav-item-collapse" id="segurados-submenu">
                             <ul>
                                 <li>
-                                    <a href="/index.html" class="btn btn-toggle">
+                                    <a href="/segurados/" class="btn btn-toggle">
                                         <i class="fa fa-list me-1"></i>
                                         <span>Cadastrados</span>
                                     </a>
@@ -48,7 +48,7 @@ class Sidebar extends HTMLElement {
                         <div class="collapse sidebar-nav-item-collapse" id="veiculos-submenu">
                             <ul>
                                 <li>
-                                    <a href="/veiculos.html" class="btn btn-toggle">
+                                    <a href="/veiculos/" class="btn btn-toggle">
                                         <i class="fa fa-list me-1"></i>
                                         <span>Cadastrados</span>
                                     </a>
@@ -71,7 +71,7 @@ class Sidebar extends HTMLElement {
                         <div class="collapse sidebar-nav-item-collapse" id="cotacoes-submenu">
                             <ul>
                                 <li>
-                                    <a href="/cotacoes.html" class="btn btn-toggle">
+                                    <a href="/cotacoes/" class="btn btn-toggle">
                                         <i class="fa fa-list me-1"></i>
                                         <span>Geradas</span>
                                     </a>
@@ -94,7 +94,7 @@ class Sidebar extends HTMLElement {
                         <div class="collapse sidebar-nav-item-collapse" id="apolices-submenu">
                             <ul>
                                 <li>
-                                    <a href="#" class="btn btn-toggle">
+                                    <a href="/apolices/" class="btn btn-toggle">
                                         <i class="fa fa-list me-1"></i>
                                         <span>Emitidas</span>
                                     </a>

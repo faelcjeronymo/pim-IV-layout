@@ -3,7 +3,7 @@ import createHtmlElement from "./main.js";
 //Importando CSS's
 let cssUrls = {
     "base" : {
-        "bootstrap" : "/node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "bootstrap" : "/node_modules/bootstrap/dist/css/bootstrap.css",
         "main" : "/public/css/styles.css"
     },
     "components" : {
@@ -13,13 +13,15 @@ let cssUrls = {
         "buttons" : "/public/css/components/buttons/buttons.css",
         "inputs" : "/public/css/components/inputs/inputs.css",
         "tables" : "/public/css/components/tables/tables.css",
+        "icons" : "/public/css/components/icons/icons.css",
     }
 };
 
 // Importando JS's
 let jsUrls = {
     "base" : {
-        "bootstrap" : "/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+        "bootstrap" : "/node_modules/bootstrap/dist/js/bootstrap.js",
+        "jquery" : "/node_modules/jquery/dist/jquery.js",
         "font-awesome" : "https://kit.fontawesome.com/5a992afea4.js",
     },
     "components" : {
